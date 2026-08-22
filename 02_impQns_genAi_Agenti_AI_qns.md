@@ -1,5 +1,5 @@
 # Most Repeated / Highest-Priority Interview Questions
-*Combined ranking across all 18 transcripts (Batch 1 + Batch 2) — prioritize preparing these first.*
+*prioritize preparing these first.*
 
 ## Asked in almost every interview
 1. Introduce yourself and walk through your projects step by step, with use cases.

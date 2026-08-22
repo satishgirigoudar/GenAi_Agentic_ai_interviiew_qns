@@ -1,5 +1,4 @@
 # GenAI / RAG / Python / Agentic AI — Master Interview Question Bank
-*Single consolidated, deduplicated list — merged from 10 interview transcripts (18 source transcripts total across both merge rounds)*
 
 ---
 
