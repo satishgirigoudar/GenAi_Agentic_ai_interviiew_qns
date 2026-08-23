@@ -8,11 +8,11 @@ The biggest advantage of RAG is that it retrieves relevant business documents fi
 
 ---
 
-# Step 1: Data Ingestion
+## Step 1: Data Ingestion
 
 The workflow starts with **data ingestion**, where we collect documents from multiple enterprise sources such as:
 
-# - PDFs,Word,APIs,Databases(sql),SharePoint,Excel Files
+** - PDFs,Word,APIs,Databases(sql),SharePoint,Excel Files**
 
 Before indexing, we perform basic preprocessing such as:
         - Extracting text
@@ -21,7 +21,7 @@ Before indexing, we perform basic preprocessing such as:
         - Preserving metadata like document name, page number, and source
 This metadata is useful later for filtering and traceability.
 ---
-# Step 2: Document Chunking
+## Step 2: Document Chunking
 After preprocessing, the next step is **Document Chunking**.
 We cannot send an entire **200-page document** to an LLM because:
         - It exceeds the context window.
@@ -65,7 +65,7 @@ Notice that each new chunk overlaps the previous one by **100 characters**.
 
 ---
 
-# Step 3: Embedding Generation
+## Step 3: Embedding Generation
 
 Once the chunks are created, each chunk is converted into a **vector embedding**.
 
@@ -104,7 +104,7 @@ must be converted using the **same embedding model**, so they exist in the same 
 
 ---
 
-# Step 4: Store in Vector Database
+## Step 4: Store in Vector Database
 
 The generated embeddings are stored in a **Vector Database** such as:
 
@@ -122,7 +122,7 @@ This metadata helps filter results and identify where the answer originated.
 
 ---
 
-# Step 5: User Query
+## Step 5: User Query
 
 When a user asks a question, for example:
 
@@ -132,7 +132,7 @@ the system converts the question into an embedding using the **same embedding mo
 
 ---
 
-# Step 6: Similarity Search
+## Step 6: Similarity Search
 
 The vector database performs **semantic similarity search**, typically using **Cosine Similarity**, to compare the query vector with all stored document vectors.
 
@@ -149,7 +149,7 @@ Even though the wording is different, the semantic meaning is similar.
 
 ---
 
-# Step 7: Prompt Augmentation
+## Step 7: Prompt Augmentation
 
 The retrieved chunks are combined with the user's question to create an **augmented prompt**.
 
@@ -168,7 +168,7 @@ This complete prompt is then sent to the LLM.
 
 ---
 
-# Step 8: LLM Response Generation
+## Step 8: LLM Response Generation
 
 Finally, the augmented prompt is sent to an LLM through:
 
@@ -183,7 +183,7 @@ Because the model receives relevant business context before generating the answe
 
 ---
 
-# Walmart Logistics Project Example
+## Walmart Logistics Project Example
 
 In my **Walmart Logistics Project**, this RAG pipeline helped planners query:
 
