@@ -12,13 +12,18 @@ The biggest advantage of RAG is that it retrieves relevant business documents fi
 
 The workflow starts with **data ingestion**, where we collect documents from multiple enterprise sources such as:
 
-** - PDFs,Word,APIs,Databases(sql),SharePoint,Excel Files**
+- **PDFs**
+- **Word**
+- **APIs**
+- **Databases(sql)**
+- **SharePoint**
+- **Excel Files**
 
 Before indexing, we perform basic preprocessing such as:
-        - Extracting text
-        - Removing unwanted characters
-        - Handling duplicate content
-        - Preserving metadata like document name, page number, and source
+- Extracting text
+- Removing unwanted characters
+- Handling duplicate content
+- Preserving metadata like document name, page number, and source
 This metadata is useful later for filtering and traceability.
 ---
 ## Step 2: Document Chunking
