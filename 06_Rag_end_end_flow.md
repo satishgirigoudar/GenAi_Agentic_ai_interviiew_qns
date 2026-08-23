@@ -78,10 +78,10 @@ An **embedding model** converts text into high-dimensional numerical vectors tha
 
 Example:
 
-| Text           | Meaning |
-|----------------|         |
+| Text | Meaning |
+|------|---------|
 | Truck Capacity | Similar |
-| Vehicle Load   | Similar |
+| Vehicle Load | Similar |
 
 Although the wording is different, their vectors are close because the meanings are similar.
 
