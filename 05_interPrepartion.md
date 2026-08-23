@@ -1,4 +1,4 @@
-# RAG Architecture (Retrieval-Augmented Generation) -- Interview Notes
+# RAG Architecture (Retrieval-Augmented Generation)
 
 ## Interview Question
 
